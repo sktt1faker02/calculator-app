@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        /* color: yellowgreen; */
+        margin-top: 1rem;
+      }
+      .attribution a {
+        /* color: green; */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="head__left">
+          <p class="logo">calc</p>
+        </div>
+        <div class="head__right">
+          <p>Theme</p>
+          <div class="toggle">
+            <div class="toggle__numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="toggle__switch left" id="toggle-switch"></div>
+            <div class="toggle__section" data-section="1"></div>
+            <div class="toggle__section" data-section="2"></div>
+            <div class="toggle__section" data-section="3"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="result">
+        <span
+          class="result__output"
+          id="output"
+          data-previous-operand=""
+        ></span>
+        <span class="result__operator" id="operator"></span>
+        <span class="result__input" id="input" data-current-operand></span>
+      </div>
+
+      <div class="calculator-grid">
+        <button class="input__primary" data-number="">7</button>
+        <button class="input__primary" data-number="">8</button>
+        <button class="input__primary" data-number="">9</button>
+        <button class="input__secondary" data-delete="">DEL</button>
+        <button class="input__primary" data-number="">4</button>
+        <button class="input__primary" data-number="">5</button>
+        <button class="input__primary" data-number="">6</button>
+        <button class="input__primary" data-operation="">+</button>
+        <button class="input__primary" data-number="">1</button>
+        <button class="input__primary" data-number="">2</button>
+        <button class="input__primary" data-number="">3</button>
+        <button class="input__primary" data-operation="">-</button>
+        <button class="input__primary" data-number="">.</button>
+        <button class="input__primary" data-number="">0</button>
+        <button class="input__primary" data-operation="">/</button>
+        <button class="input__primary" data-operation="">x</button>
+        <button class="input__span-reset input__secondary" data-reset="">
+          Reset
+        </button>
+        <button class="input__span-equal input__tertiary" data-equals="">
+          =
+        </button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Michael Tabilin</a>.
+    </div>
+  </body>
+</html>
